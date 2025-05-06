@@ -7,7 +7,7 @@ body{
     background-color: #0F131C;
 }
 #container{
-    background-image: url(Background1.png);
+    background-image: url(Background.png);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
