@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'DM Sans', sans-serif;
+}
+
+
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+
+#particle-canvas {
+  width: 100%;
+  height: 100%;
+  background: #0F131C;
+  position: relative;
+}
+
+/* ==================== Novas Regras para o Card de Login ==================== */
+
+.login-wrapper {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 30;
+}
+
+
+.login-card {
+    pointer-events: auto;
+    background: rgba(27, 35, 48, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(8px);
+    border: none;
+    border-radius: 15px;
+    padding: 3rem;
+    width: 420px;
+    color: #ffffff;
+    box-shadow: 
+      inset 0 0 30px rgba(255, 255, 255, 0.2),  
+      0 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+
+.login-card h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+#name {
+  margin-bottom: 15px;
+}
+
+#email {
+  margin-bottom: 15px;
+}
+
+#password {
+  margin-bottom: 2px;
+}
+
+.login-card label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.password-container button {
+  right: -5px;
+
+}
+
+.login-card input[type="text"],
+.login-card input[type="email"],
+.login-card input[type="password"] {
+  width: 100%;
+  height: 30px;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  background: #394559;
+  color: #ffffff;
+ 
+}
+
+.login-card input::placeholder {
+  color:#aab5c8;
+}
+
+.login-card input:focus {
+  outline: none;
+  background: #252c39;
+  box-shadow: 2px 1px 15px 0px rgba(255,255,255,0.15);
+}
+
+/* Área dos links */
+.login-card .links {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.conta {
+  display: flex;
+  font-size: 0.8rem;
+}
+
+#conta-text {
+  margin: 0;
+  margin-right: 4px;
+  color:#aab5c8;
+  font-size: 0.8rem;
+}
+
+/* Estilo dos links */
+.login-card a {
+  color: #00A6FF;
+  text-decoration: none;
+  font-size: 0.8rem;
+  margin-bottom: 50px;
+}
+
+.login-card a:hover {
+  text-decoration: underline;
+}
+
+/* Botão de login */
+.login-button {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #394559bf;
+  color: #ffffff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: ease 0.2s;
+  margin-bottom: 20px;
+}
+
+.login-button:hover {
+  background-color: #2e3544c5;
+  transition: ease 0.2s;
+  box-shadow: 2px 1px 15px 0px rgba(255,255,255,0.15);
+}
+
+.checkbox-container {
+  display: flex;
+  flex-direction: row;
+  vertical-align: middle;
+  align-items: center;
+}
+
+  .checkbox-container input[type="checkbox"] {
+    align-self: center;
+    border:  solid 1px #fff;
+    background-color: none;
+    appearance: none;
+    padding: 0.5rem;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+.checkbox-container input[type="checkbox"]:checked {
+  color: #fff;
+  background-color: #2e71be; 
+  border-color: #2e71be;
+  box-shadow: 2px 1px 15px 0px rgba(0, 106, 255, 0.45);
+}
+
+
+.checkbox-container p {
+  font-size: 12px;
+  vertical-align: text-bottom;
+}
