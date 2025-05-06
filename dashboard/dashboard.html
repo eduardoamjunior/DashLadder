@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Dashboard de Monitoramento</title>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <h3>Bom dia, admin</h3>
+        </div>
+        <div class="header-right">
+            <span class="time">23:59</span>
+            <button class="icon-btn search"><i class="fas fa-search"></i></button>
+            <button class="icon-btn notifications"><i class="fas fa-bell"></i><span class="badge">1</span></button>
+        </div>
+    </header>
+
+    <div class="parent">
+        <div class="card div1">
+            <h2>Tempo de atividade</h2>
+            <div class="timer-container">
+                <div class="timer">
+                    <div class="time-labels">
+                        <span>days</span>
+                        <span>hours</span>
+                        <span>min</span>
+                    </div>
+                    <div class="time-values">
+                        <span>31</span>:<span>23</span>:<span>59</span>
+                    </div>
+                </div>
+                <div class="metrics">
+                    <div class="metric">
+                        <span class="label">Delay</span>
+                        <span class="value green">10ms</span>
+                    </div>
+                    <div class="metric">
+                        <span class="label">Uptime (24h)</span>
+                        <span class="value yellow">74.3%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card div2">
+            <h2>Inteligência Artificial</h2>
+            <div class="ai-container">
+                <p>Bem Vindo de Volta</p>
+                <p>Clique em <span class="icon-btn-small"><i class="fas fa-chart-line"></i></span> para iniciar a análise</p>
+            </div>
+        </div>
+
+        <div class="card div3">
+            <div class="sensor-header">
+                <h2>Sensor 1 - Quantidade Total</h2>
+                <span class="status-indicator green"></span>
+            </div>
+            <div class="chart-container">
+                <div class="chart-footer">
+                    <span class="icon-btn-small"><i class="fas fa-chart-line"></i></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card div4">
+            <div class="sensor-header">
+                <h2>Sensor 2 - Indutivo</h2>
+                <span class="status-indicator cyan"></span>
+            </div>
+            <div class="pie-chart">
+                <div class="pie-container">
+                    <div class="pie-segment metal">Metal</div>
+                    <div class="pie-segment plastico">Plástico</div>
+                </div>
+                <div class="chart-footer">
+                    <span class="icon-btn-small"><i class="fas fa-chart-line"></i></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card div5">
+            <div class="sensor-header">
+                <h2>Sensor 3 - Tamanho</h2>
+                <span class="status-indicator cyan"></span>
+            </div>
+            <div class="bar-chart">
+                <div class="bar-container">
+                    <div class="bar small">5</div>
+                    <div class="bar large">10</div>
+                </div>
+                <div class="bar-labels">
+                    <span>Pequeno</span>
+                    <span>Grande</span>
+                </div>
+                <div class="chart-footer">
+                    <span class="icon-btn-small"><i class="fas fa-chart-line"></i></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card div6">
+            <div class="sensor-header">
+                <h2>Sensor 4 - Obstrução</h2>
+                <span class="status-indicator yellow"></span>
+            </div>
+            <div class="obstruction-info">
+                <p>Possibilidade de obstrução:</p>
+                <p class="percentage">60%</p>
+                <p>Tempo sem novas peças:</p>
+                <p class="time-value">3m 10s</p>
+                <div class="chart-footer">
+                    <span class="icon-btn-small"><i class="fas fa-chart-line"></i></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card div7">
+            <div class="sensor-header">
+                <h2>Sensor 5 - Eficiência</h2>
+                <span class="status-indicator red"></span>
+            </div>
+            <div class="gauge-chart">
+                <div class="gauge">
+                    <div class="gauge-needle"></div>
+                </div>
+                <p class="efficiency-value">2 peças/min</p>
+                <div class="chart-footer">
+                    <span class="icon-btn-small"><i class="fas fa-chart-line"></i></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
