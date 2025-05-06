@@ -1,0 +1,103 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:sans-serif;
+}
+body{
+    background-color: #0F131C;
+}
+#container{
+    background-image: url(assets/Untitled@1-1902x953\ \(5\)\ 1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+}
+
+#land-mensage{
+display: flex;
+margin-left: 60px;
+flex-direction: column;
+align-items: center;
+}
+
+#land-mensage h1{
+    color: #fff;
+    font-size: 80px;
+    margin-bottom:10px;
+    font-family:sans-serif;
+}
+
+#land-mensage h3{
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: 16px;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+#land-mensage a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #354154;
+    width: 240px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    transition: ease 0.2s;
+}
+
+#land-mensage a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#land-mensage a:hover {
+    background-color: #465771;
+    box-shadow: 2px 1px 15px 0px #465771;
+    transition: ease 0.2s;
+    cursor: pointer;
+}
+
+.github {
+    display: flex;
+    color: #4c4c4c;
+    gap:10px;
+    position: absolute;
+    right: 25px;
+    top: 20px;
+    text-decoration: none;
+    transition: ease 0.2s;
+}
+
+.github:hover {
+    color: #fff;
+    transition: ease 0.2s;
+}
+
+.github p {
+    display: flex;
+    vertical-align: middle;
+    text-align: justify;
+    align-self: center;
+    font-weight: 600;
+}
+
+.page {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .fade-out {
+    opacity: 0;
+  }
+  
+  /* Opcional: estilo para fade in quando a página de login carrega */
+  .fade-in {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
