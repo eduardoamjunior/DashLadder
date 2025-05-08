@@ -1,7 +1,8 @@
 # DashLadder
 
 ### Link de atalho: 
-- https://eduardoamjunior.github.io/DashLadder/
+- [Landpage](https://eduardoamjunior.github.io/DashLadder/)
+- [Dashboard](https://eduardoamjunior.github.io/DashLadder/dashboard/dashboard.html)
 
 ### Desenvolvido por:
 
