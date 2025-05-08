@@ -1,9 +1,9 @@
 # DashLadder
 
-Link de atalho: 
+### Link de atalho: 
 - https://eduardoamjunior.github.io/DashLadder/
 
-## Desenvolvido por
+### Desenvolvido por
 
 - Eduardo Augusto
 - Igor Gerlach
