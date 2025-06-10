@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashLadder - Dashboard Industrial</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <h3 id="greeting">Carregando...</h3>
+        </div>
+        <div class="header-right">
+            <span class="time" id="current-time">--:--</span>
+            <button class="icon-btn notifications" title="Notificações">🔔</button>
+        </div>
+    </header>
+
+    <div class="parent">
+        <!-- Tempo de atividade -->
+        <div class="card div1">
+            <h2>Tempo de atividade do sistema</h2>
+            <div class="timer-container">
+                <div class="timer">
+                    <div class="time-labels">
+                        <span>dias</span>
+                        <span>horas</span>
+                        <span>min</span>
+                        <span>seg</span>
+                    </div>
+                    <div class="time-values" id="uptime-display">
+                        <span id="days">0</span>:<span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
+                    </div>
+                </div>
+                <div class="connection-info">
+                    <div class="connection-status" id="db-status"></div>
+                    <span>Sistema online</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- IA -->
+        <div class="card div2">
+            <h2>Inteligência Artificial</h2>
+            <div class="ai-container">
+                <p class="ai-welcome">Bem Vindo de Volta</p>
+                <div class="ai-container-description"><p class="ai-description">Clique no botão para iniciar a análise</p>
+                <button class="analyze-btn" onclick="performAnalysis()"><p>Iniciar a Análise</p> </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sensor 1 - Quantidade Total -->
+        <div class="card div3">
+            <div class="sensor-header">
+                <h2>Quantidade Total - Últimas 24h</h2>
+                <span class="status-indicator green" id="sensor1-status"></span>
+            </div>
+            <div class="chart-container">
+                <canvas id="quantidadeChart"></canvas>
+            </div>
+        </div>
+
+        <!-- Sensor 2 - Indutivo -->
+        <div class="card div4">
+            <div class="sensor-header">
+                <h2>Sensor Indutivo - Material</h2>
+                <span class="status-indicator cyan" id="sensor2-status"></span>
+            </div>
+            <div class="chart-container">
+                <canvas id="indutivoChart"></canvas>
+            </div>
+        </div>
+
+        <!-- Sensor 3 - Tamanhos -->
+        <div class="card div5">
+            <div class="sensor-header">
+                <h2>Tamanhos das Peças</h2>
+                <span class="status-indicator cyan" id="sensor3-status"></span>
+            </div>
+            <div class="chart-container">
+                <canvas id="tamanhosChart"></canvas>
+            </div>
+        </div>
+
+        <!-- Sensor 4 - Obstrução -->
+        <div class="card div6">
+            <div class="sensor-header">
+                <h2>Monitoramento de Obstrução</h2>
+                <span class="status-indicator yellow" id="sensor4-status"></span>
+            </div>
+            <div class="obstruction-container">
+                <div class="obstruction-info">
+                    <div class="obstruction-probability">
+                        <h3>Possibilidade de Obstrução</h3>
+                        <div class="probability-value" id="obstruction-percentage">0%</div>
+                    </div>
+                    <div class="time-info">
+                        <h3>Tempo sem Novas Peças</h3>
+                        <div class="time-value" id="time-since-last">0 min</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sensor 5 - Eficiência -->
+        <div class="card div7">
+            <div class="sensor-header">
+                <h2>Peças por Minuto</h2>
+                <span class="status-indicator green" id="sensor5-status"></span>
+            </div>
+            <div class="chart-container">
+                <canvas id="eficienciaChart"></canvas>
+                <div class="eficiencia-info">
+                    <div class="eficiencia-texto" id="eficiencia-valor">0.0</div>
+                    <div class="producao-detalhes">
+                        <p>peças/min</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+    <script src="script.js"></script>
+</html>
